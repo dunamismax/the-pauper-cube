@@ -1,0 +1,42 @@
+# Cloudflare Pages Headers for optimal performance
+
+/*
+  # Security headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-XSS-Protection: 1; mode=block
+  
+  # Performance headers
+  Cache-Control: public, max-age=86400
+
+# Static assets - cache for 1 year
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts - cache for 1 year
+*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  
+*.woff
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML files - shorter cache
+*.html
+  Cache-Control: public, max-age=3600
+
+# Manifest and service worker
+/manifest.json
+  Cache-Control: public, max-age=0
+
+/sw.js
+  Cache-Control: public, max-age=0

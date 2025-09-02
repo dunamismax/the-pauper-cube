@@ -1,0 +1,26 @@
+# Hugo build outputs
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+
+# Temporary files
+.DS_Store
+*.tmp
+*.log
+
+# Local development
+.hugo_build.lock
+.vscode/
+
+# Node.js (if needed)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Cloudflare Pages
+.wrangler/
+wrangler.toml
+
+# Backup files
+*.backup
+*.bak

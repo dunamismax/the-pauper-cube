@@ -1,0 +1,51 @@
+{{ partial "docs/html-head" . }}
+
+<!-- Custom CSS for mobile optimization and performance -->
+{{ $customCSS := resources.Get "css/custom.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $customCSS.RelPermalink }}">
+
+<!-- Preconnect to font origins for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Mobile-first meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Pauper Cube Guide">
+
+<!-- PWA and mobile icons -->
+<meta name="theme-color" content="#3498db">
+<meta name="msapplication-TileColor" content="#3498db">
+
+<!-- Performance optimizations -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="{{ .Site.Params.seo.description | default .Description }}">
+<meta name="keywords" content="{{ delimit .Site.Params.seo.keywords "," }}">
+<meta name="author" content="Adam Styborski">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta property="og:description" content="{{ .Site.Params.seo.description | default .Description }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<meta property="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta property="twitter:description" content="{{ .Site.Params.seo.description | default .Description }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Additional performance hints -->
+<link rel="prefetch" href="{{ "/docs/draft-guide/" | relURL }}">
+<link rel="prefetch" href="{{ "/docs/archetypes/" | relURL }}">
+<link rel="prefetch" href="{{ "/docs/cube-list/" | relURL }}">

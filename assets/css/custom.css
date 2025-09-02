@@ -1,0 +1,310 @@
+/* Import Inter font from Google Fonts for lightning-fast loading */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  /* Custom colors for The Pauper Cube theme */
+  --cube-primary: #2c3e50;
+  --cube-secondary: #3498db;
+  --cube-accent: #e74c3c;
+  --cube-success: #27ae60;
+  --cube-warning: #f39c12;
+  --cube-light: #ecf0f1;
+  --cube-dark: #34495e;
+  
+  /* Mobile-first font sizing */
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 18px;
+  --font-size-h1: 1.75rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.25rem;
+  
+  /* Spacing for touch-friendly mobile experience */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+}
+
+/* Base font settings - Inter for desktop, system fonts for mobile performance */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+}
+
+/* Mobile-first responsive typography */
+@media (max-width: 767px) {
+  body {
+    /* Use system fonts on mobile for fastest loading */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+  }
+  
+  h1 { font-size: var(--font-size-h1); }
+  h2 { font-size: var(--font-size-h2); }
+  h3 { font-size: var(--font-size-h3); }
+  
+  /* Optimize touch targets for mobile */
+  .book-menu a,
+  .book-toc a,
+  button,
+  [role="button"] {
+    min-height: 44px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Better mobile menu spacing */
+  .book-menu ul {
+    padding-left: var(--spacing-md);
+  }
+  
+  .book-menu li {
+    margin: var(--spacing-xs) 0;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Desktop specific styles */
+@media (min-width: 1024px) {
+  body {
+    font-size: var(--font-size-base);
+  }
+  
+  .book-page {
+    max-width: none;
+  }
+}
+
+/* Custom styling for Pauper Cube content */
+
+/* Archetype cards styling */
+.archetype-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+@media (max-width: 767px) {
+  .archetype-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+}
+
+.archetype-card {
+  background: var(--cube-light);
+  border: 2px solid var(--cube-secondary);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.archetype-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+}
+
+.archetype-name {
+  font-weight: 600;
+  color: var(--cube-primary);
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.archetype-desc {
+  font-size: var(--font-size-small);
+  color: var(--cube-dark);
+  line-height: 1.5;
+}
+
+/* Mana symbols styling */
+.mana-symbols {
+  font-family: 'Courier New', Monaco, Consolas, monospace;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Draft tips and priority sections */
+.priority-section {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border-left: 4px solid var(--cube-warning);
+  padding: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+}
+
+@media (max-width: 767px) {
+  .tips-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .priority-section {
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-sm);
+  }
+}
+
+/* Deck building formula table */
+.deck-formula {
+  background: var(--cube-light);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: var(--spacing-lg) 0;
+}
+
+.deck-formula table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.deck-formula th,
+.deck-formula td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.deck-formula th {
+  background: var(--cube-secondary);
+  color: white;
+  font-weight: 600;
+}
+
+.deck-formula .highlight-row {
+  background: #fff3cd;
+  font-weight: 600;
+}
+
+/* Mobile optimization for tables */
+@media (max-width: 767px) {
+  .deck-formula {
+    font-size: var(--font-size-small);
+    margin: var(--spacing-md) 0;
+  }
+  
+  .deck-formula th,
+  .deck-formula td {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
+/* Cube list styling */
+.cube-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--spacing-sm);
+  margin: var(--spacing-lg) 0;
+}
+
+.cube-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: var(--spacing-sm);
+  font-size: var(--font-size-small);
+  transition: box-shadow 0.2s ease;
+}
+
+.cube-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 767px) {
+  .cube-list {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xs);
+    margin: var(--spacing-md) 0;
+  }
+  
+  .cube-card {
+    padding: var(--spacing-xs);
+    font-size: 12px;
+  }
+}
+
+/* Performance optimizations */
+.book-menu,
+.book-toc {
+  will-change: transform;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid var(--cube-secondary);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  .book-menu,
+  .book-header,
+  .book-search {
+    display: none;
+  }
+  
+  .archetype-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cube-light: #34495e;
+    --cube-dark: #ecf0f1;
+  }
+  
+  .archetype-card {
+    background: var(--cube-dark);
+    color: var(--cube-light);
+  }
+  
+  .priority-section {
+    background: rgba(243, 156, 18, 0.2);
+    border-left-color: var(--cube-warning);
+  }
+}

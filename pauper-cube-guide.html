@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pauper Cube - Draft Guide</title>
+    <style>
+        @media print {
+            body { margin: 0.3in; }
+            .no-break { page-break-inside: avoid; }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.3;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.25in;
+        }
+        
+        h1 {
+            font-size: 18pt;
+            margin: 0 0 8px 0;
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 4px;
+        }
+        
+        h2 {
+            font-size: 12pt;
+            margin: 10px 0 5px 0;
+            color: #34495e;
+            background: #ecf0f1;
+            padding: 3px 6px;
+            border-left: 3px solid #3498db;
+        }
+        
+        .columns {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        .deck-building {
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .archetype-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .archetype {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        
+        .archetype-name {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 10pt;
+        }
+        
+        .archetype-desc {
+            font-size: 9pt;
+            color: #555;
+            margin-top: 2px;
+        }
+        
+        .tips-section {
+            background: #fffbf0;
+            border: 1px solid #f0ad4e;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        
+        ul {
+            margin: 3px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 2px 0;
+            font-size: 9.5pt;
+        }
+        
+        .color-pair {
+            display: inline-block;
+            font-weight: bold;
+            margin-right: 4px;
+        }
+        
+        .mana-symbols {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 5px 0;
+            font-size: 9.5pt;
+        }
+        
+        td {
+            padding: 2px 5px;
+            border: 1px solid #ddd;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 1px 3px;
+            border-radius: 2px;
+        }
+        
+        .draft-basics {
+            background: #e8f4fd;
+            padding: 6px;
+            margin-bottom: 8px;
+            border-left: 3px solid #0066cc;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎲 THE PAUPER CUBE - DRAFT GUIDE 🎲</h1>
+    
+    <div class="draft-basics">
+        <strong>Draft Format:</strong> 3 packs of 15 cards each • Pick 1, pass remaining • 45 cards total • Build a 40-card deck
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <div class="deck-building no-break">
+                <h2>📊 DECK BUILDING FORMULA</h2>
+                <table>
+                    <tr>
+                        <td><strong>Lands</strong></td>
+                        <td>17 (16-18 range)</td>
+                        <td>Base for 2-color deck</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Creatures</strong></td>
+                        <td>14-17</td>
+                        <td>Core of most decks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Removal</strong></td>
+                        <td>3-6</td>
+                        <td>Premium picks!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Other Spells</strong></td>
+                        <td>3-5</td>
+                        <td>Card draw, tricks, etc.</td>
+                    </tr>
+                    <tr style="background: #fff3cd;">
+                        <td><strong>Total Cards</strong></td>
+                        <td><strong>40 exactly</strong></td>
+                        <td>Never more!</td>
+                    </tr>
+                </table>
+                
+                <strong>Mana Curve Goals:</strong>
+                <ul style="margin-top: 5px;">
+                    <li>1-mana: 0-2 cards</li>
+                    <li>2-mana: 5-8 cards (critical!)</li>
+                    <li>3-mana: 4-6 cards</li>
+                    <li>4-mana: 3-5 cards</li>
+                    <li>5+ mana: 2-4 cards</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="column">
+            <h2>🎯 DRAFT PRIORITIES</h2>
+            <strong>P1P1 (First Picks):</strong>
+            <ul>
+                <li><span class="highlight">Premium Removal</span>: Lightning Bolt, Cast Down, Journey to Nowhere</li>
+                <li><span class="highlight">Bombs</span>: Mulldrifter, Guardian of the Guildpact, Gray Merchant</li>
+                <li><span class="highlight">Efficient Creatures</span>: Savannah Lions, Kor Skyfisher</li>
+            </ul>
+            
+            <strong>Always Prioritize:</strong>
+            <ul>
+                <li>2-mana creatures (backbone of format)</li>
+                <li>Removal spells (always scarce)</li>
+                <li>Card advantage (draw, 2-for-1s)</li>
+                <li>Fixing lands (enables splashes)</li>
+            </ul>
+            
+            <strong>Avoid Trap Cards:</strong>
+            <ul>
+                <li>Expensive cards without immediate impact</li>
+                <li>Situational counters/combat tricks</li>
+                <li>Auras (unless hexproof/protection)</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>🎨 TWO-COLOR ARCHETYPES</h2>
+    <div class="archetype-grid">
+        <div class="archetype">
+            <div class="archetype-name">⚪🔵 W/U - FLICKER</div>
+            <div class="archetype-desc">ETB value + Ephemerate/Ghostly Flicker. Key: Mulldrifter, Kor Skyfisher, Archaeomancer</div>
+        </div>
+        <div class="archetype">
+            <div class="archetype-name">🔵⚫ U/B - CONTROL</div>
+            <div class="archetype-desc">Removal + card draw + finishers. Key: Gurmag Angler, Mystical Teachings, Counterspell</div>
+        </div>
+        <div class="archetype">
+            <div class="archetype-name">⚫🔴 B/R - AGGRO/ARISTOCRATS</div>
+            <div class="archetype-desc">Sacrifice synergies + burn. Key: Goblin Bombardment, Carrion Feeder, Mogg War Marshal</div>
+        </div>
+        <div class="archetype">
+            <div class="archetype-name">🔴🟢 R/G - MONSTERS</div>
+            <div class="archetype-desc">Ramp into beaters. Key: Burning-Tree Emissary, Llanowar Elves, Savage Punch</div>
+        </div>
+        <div class="archetype">
+            <div class="archetype-name">🟢⚪ G/W - COUNTERS</div>
+            <div class="archetype-desc">+1/+1 counter synergies. Key: Travel Preparations, Ivy Lane Denizen, Sigil Blessing</div>
+        </div>
+        <div class="archetype">
+            <div class="archetype-name">⚪⚫ W/B - MIDRANGE</div>
+            <div class="archetype-desc">Efficient creatures + removal. Key: Castigate, Unmake, Orzhov Pontiff</div>
+        </div>
+        <div class="archetype">
+            <div class="archetype-name">🔵🔴 U/R - SPELLS MATTER</div>
+            <div class="archetype-desc">Prowess + cheap spells. Key: Kiln Fiend, Delver of Secrets, Augur of Bolas</div>
+        </div>
+        <div class="archetype">
+            <div class="archetype-name">⚫🟢 B/G - GRAVEYARD</div>
+            <div class="archetype-desc">Recursive value. Key: Satyr Wayfinder, Grisly Salvage, Unearth</div>
+        </div>
+        <div class="archetype">
+            <div class="archetype-name">🔴⚪ R/W - GO WIDE</div>
+            <div class="archetype-desc">Tokens + pump effects. Key: Rally the Peasants, Battle Screech, Goblin Bushwhacker</div>
+        </div>
+        <div class="archetype">
+            <div class="archetype-name">🟢🔵 G/U - RAMP</div>
+            <div class="archetype-desc">Mana dorks into card draw. Key: Coiling Oracle, Pulse of Murasa, Ulamog's Crusher</div>
+        </div>
+    </div>
+
+    <div class="tips-section">
+        <h2>💡 PAUPER CUBE SPECIFIC TIPS</h2>
+        <div class="columns">
+            <div class="column">
+                <strong>Format Characteristics:</strong>
+                <ul>
+                    <li>Games are grindy - 2-for-1s are king</li>
+                    <li>No board wipes - creatures stick around</li>
+                    <li>Combat tricks better than usual</li>
+                    <li>Monarch cards are very powerful</li>
+                    <li>Protection (Guardian of Guildpact) is near-unbeatable</li>
+                </ul>
+            </div>
+            <div class="column">
+                <strong>Hidden Gems to Watch For:</strong>
+                <ul>
+                    <li><strong>Ninja of the Deep Hours</strong> - Card advantage engine</li>
+                    <li><strong>Crypt Rats</strong> - Closest to a board wipe</li>
+                    <li><strong>Pestilence</strong> - Game-dominating enchantment</li>
+                    <li><strong>Rolling Thunder</strong> - Flexible removal/finisher</li>
+                    <li><strong>Sprout Swarm</strong> - Instant-speed army</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 10px; font-size: 9pt; color: #666;">
+        <strong>Remember:</strong> Stay open early • Prioritize curve • Take lands highly • Most games won through small advantages
+    </div>
+</body>
+</html>
