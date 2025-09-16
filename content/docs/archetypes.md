@@ -97,9 +97,10 @@ BookToC: true
 <div class="archetype-name">B/G - GRAVEYARD</div>
 <div class="archetype-desc">
 
-**Strategy:** Recursive value and graveyard synergies  
+**Strategy:** Recursive value and graveyard synergies. This archetype can be built as a value-oriented midrange deck or as a "Reanimator" deck.  
 **Key Cards:** Satyr Wayfinder, Grisly Salvage, Unearth, Tortured Existence  
-**Win Condition:** Graveyard-powered threats and repeated value  
+**Reanimator Package:** Use cards like Looter il-Kor and Merfolk Looter to discard big threats like Ulamog's Crusher, then bring them back with Unearth or Dread Return.
+**Win Condition:** Graveyard-powered threats and repeated value.  
 **Draft Priority:** Enablers > Payoffs > Recursive threats
 
 </div>

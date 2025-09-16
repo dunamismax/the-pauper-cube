@@ -39,6 +39,9 @@ The authoritative, always up-to-date official cube list with draft simulator, an
 - Updates and announcements
 - Friendly competition and leagues
 
+**[Community Polling](https://pauper-cube-polling.netlify.app/)**
+- Vote on new card additions to the cube.
+
 ## This Guide
 
 This mobile-optimized draft guide was created to provide the perfect companion for in-person drafting sessions. It combines:

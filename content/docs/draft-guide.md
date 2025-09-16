@@ -132,6 +132,14 @@ BookToC: true
 
 ## Advanced Draft Tips
 
+### Splashing
+
+Splashing a third color can be powerful, but it comes at the cost of consistency. Here's when to consider it:
+
+- **When to Splash:** For powerful gold cards or premium removal that you can't get in your primary colors.
+- **What to Splash:** Cards with a single off-color mana symbol. Avoid splashing cards with double pips.
+- **How to Splash:** Prioritize dual lands, mana rocks (like Mind Stone and Bonder's Ornament), and cards like Prophetic Prism. You'll want at least 3-4 sources of your splash color.
+
 ### Reading Signals
 
 **Pack 1:**

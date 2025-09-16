@@ -80,7 +80,7 @@ Source code: [github.com/dunamismax/the-pauper-cube](https://github.com/dunamism
 
 <div style="text-align: center; font-size: 14px; color: #6c757d; margin-top: 2rem;">
 
-**Quick Links:** [Cube Cobra](https://cubecobra.com/cube/list/thepaupercube) • [Official Site](https://thepaupercube.com/) • [Discord](https://discord.gg/Px2JhHM)
+**Quick Links:** [Cube Cobra](https://cubecobra.com/cube/list/thepaupercube) • [Official Site](https://thepaupercube.com/) • [Discord](https://discord.gg/Px2JhHM) • [Polling](https://pauper-cube-polling.netlify.app/)
 
 *This guide is optimized for mobile devices and Cloudflare Pages deployment*
 

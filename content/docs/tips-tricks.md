@@ -35,6 +35,20 @@ BookToC: true
 <strong>Golden Rule:</strong> Protection (like Guardian of the Guildpact) is nearly unbeatable in this format.
 </div>
 
+## Creature Evaluation
+
+### Evasive Creatures
+
+Creatures with flying, shadow, or other forms of evasion are premium threats. In a format dominated by creature combat, being able to attack without being blocked is a huge advantage.
+
+- **Top Evasive Threats:** Soltari Trooper, Kor Skyfisher, Mist Raven, Pestermite, Cloudkin Seer
+
+### Resilient Creatures
+
+Creatures that are difficult to remove or that generate value when they die are highly valuable. Look for creatures with recursion, undying, or that create tokens upon death.
+
+- **Top Resilient Threats:** Doomed Traveler, Carrier Thrall, Putrid Goblin, Safehold Elite, Nested Shambler
+
 ## Hidden Gems to Watch For
 
 ### Underrated Powerhouses
