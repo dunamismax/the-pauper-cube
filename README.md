@@ -82,7 +82,7 @@ This is the definitive source for the current 540-card list, maintained by Adam 
 
 - **Adam Styborski:** Creator and curator of The Pauper Cube
 - **[The Pauper Cube Official Site](https://thepaupercube.com/)**
-- **[Cube Cobra](https://cubecobra.com/cube/list/thepaupercube)** 
+- **[Cube Cobra](https://cubecobra.com/cube/list/thepaupercube)**
 - **[Discord Community](https://discord.gg/Px2JhHM)**
 - **[Hugo Book Theme](https://github.com/alex-shpak/hugo-book)** by Alex Shpak
 
